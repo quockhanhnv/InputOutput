@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ComponentArchiteching';
+
+  searchKey = "Default termm";
+
+  keySideBar = "Test Input";
+
+  userName = "Default UserName";
+  onSearchChange(val) {
+    // debugger;
+    this.searchKey = val;
+  }
+
+  onSubmited(val) {
+    this.userName = val;
+  }
+
 }
